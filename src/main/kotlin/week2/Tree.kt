@@ -48,7 +48,3 @@ fun <T> Tree<T>.toList(): List<T> = when (this) {
     is Leaf -> listOf(value)
     is Node -> left.toList() + right.toList()
 }
-
-fun main() {
-
-}
